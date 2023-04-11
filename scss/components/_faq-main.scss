@@ -1,0 +1,111 @@
+.heading-main {
+  @include center;
+  margin-top: 24px;
+  h1 {
+    height: 32px;
+    width: 49px;
+    @include mobile-head;
+  }
+}
+.finally-end-box {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .accordion-box {
+    margin-top: 48px;
+  }
+  .finally-end-box {
+    @include center;
+    padding-bottom: 104px;
+    padding-top: 120px;
+    .finally-end-container {
+      height: 240px;
+      width: 90%;
+      border-radius: 16px;
+      background-color: $pink400;
+      padding-top: 0px;
+      @include center;
+      .finally-end {
+        display: flex;
+        width: 80%;
+        gap: 188px;
+        justify-content: space-around;
+        .info {
+          @include center;
+          flex-direction: column;
+          gap: 16px;
+        }
+        h1 {
+          height: 64px;
+          width: 494px;
+          font-size: 48px;
+          line-height: 48px;
+          @include desktop-head;
+          text-align: left;
+          color: $secondary;
+        }
+        p {
+          height: 48px;
+          width: 528px;
+          @include paragraph-font;
+          color: $secondary;
+        }
+        img {
+          display: none;
+        }
+        .btns {
+          flex-direction: row;
+          margin-top: 0px;
+          position: relative;
+          top: 0px;
+          @include center;
+          gap: 24px;
+          button {
+            height: 48px;
+            width: 174px;
+            border-radius: 8px;
+            padding: 12px;
+            font-family: Euclid Circular A;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+          }
+          .light {
+            border: 1px solid $secondary;
+            background-color: $secondary;
+            color: $primary;
+          }
+          .dark {
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-box {
+    .row2 {
+      height: 120px;
+      .copyright {
+        margin-top: 70px;
+        img {
+          margin-bottom: 55px;
+        }
+      }
+    }
+  }
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed):focus {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  border-color: unset !important;
+  box-shadow: none !important;
+}

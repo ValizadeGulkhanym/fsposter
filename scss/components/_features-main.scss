@@ -1,0 +1,215 @@
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 88px;
+  background-color: #f9f9f9;
+  .heading {
+    @include center;
+    flex-direction: column;
+    h1 {
+      height: 32px;
+      width: 101px;
+      @include mobile-head;
+    }
+    h2 {
+      height: 48px;
+      width: 328px;
+      font-family: Euclid Circular A;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $primary;
+    }
+  }
+  .grid-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 40px;
+    opacity: 0.5;
+    .grid-col {
+     height: 244px;
+     width: 358px;
+      background-color: $secondary;
+      border-radius: 16px;
+      box-shadow: 0px 8px 32px 0px #767f9a14;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      gap: 16px;
+      h1 {
+        height: 28px;
+        width: 320px;
+        @include font2028400;
+        color: $primary;
+      }
+      p {
+        height: 60px;
+        width: 320px;
+        @include font1420400;
+        color: $primary;
+      }
+    }
+  }
+}
+.finally-end-box {
+  background-color: #f9f9f9;
+  @include center;
+
+  .finally-end-container {
+    height: 509px;
+    width: 90%;
+    border-radius: 16px;
+    background-color: $pink400;
+    padding-top: 68px;
+    @include center;
+    .finally-end {
+      .info {
+        @include center;
+        flex-direction: column;
+        gap: 32px;
+      }
+      img {
+        position: relative;
+        top: 10px;
+      }
+      h1 {
+        height: 80px;
+        width: 280px;
+        @include desktop-head;
+        text-align: left;
+        color: $secondary;
+      }
+      p {
+        height: 96px;
+        width: 280px;
+        @include paragraph-font;
+        color: $secondary;
+      }
+      .btns {
+        @include center;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 24px;
+        position: relative;
+        top: 30px;
+        button {
+          height: 48px;
+          width: 280px;
+          border-radius: 8px;
+          padding: 12px;
+          font-family: Euclid Circular A;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+        .light {
+          border: 1px solid $secondary;
+          background-color: $secondary;
+          color: $primary;
+        }
+        .dark {
+          border: 1px solid $primary;
+          background-color: $primary;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $desktop) {
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 120px;
+
+    .heading {
+      gap: 24px;
+      h1 {
+        height: 40px;
+        width: 143px;
+        @include desktop-head;
+        text-align: center;
+      }
+      h2 {
+        height: 28px;
+        width: 300px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+    .grid-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+      opacity: 1;
+      .grid-col {
+        box-shadow: 0px 8px 32px 0px #767f9a14;
+        width: 390px;
+        height: 244px;
+        h1 {
+          height: 28px;
+          width: 320px;
+          @include font2028400;
+          color: $primary;
+        }
+        p {
+          height: 60px;
+          width: 320px;
+          @include font1420400;
+          color: $primary;
+        }
+      }
+    }
+  }
+  .finally-end-box {
+    padding-bottom: 104px;
+    .finally-end-container {
+      height: 240px;
+      padding-top: 0px;
+      .finally-end {
+        display: flex;
+        width: 80%;
+        gap: 188px;
+        justify-content: space-around;
+        .info {
+          gap: 16px;
+        }
+        h1 {
+          height: 64px;
+          width: 494px;
+          font-size: 48px;
+          line-height: 48px;
+        }
+        p {
+          height: 48px;
+          width: 528px;
+        }
+        img {
+          display: none;
+        }
+        .btns {
+          flex-direction: row;
+          margin-top: 0px;
+          position: relative;
+          top: 0px;
+          button {
+            height: 48px;
+            width: 174px;
+          }
+        }
+      }
+    }
+  }
+}

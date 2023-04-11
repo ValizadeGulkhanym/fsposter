@@ -1,0 +1,45 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+@mixin mobile-head{
+font-family: Euclid Circular A;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: center;
+color: $primary;
+}
+@mixin desktop-head{
+font-family: Euclid Circular A;
+font-size: 34px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0em;
+color: $primary;
+}
+@mixin paragraph-font{
+font-family: Euclid Circular A;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+color: $primary;
+}
+@mixin font2028400{
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+@mixin font1420400{
+    font-family: Euclid Circular A;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+     
+}

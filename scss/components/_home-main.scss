@@ -1,0 +1,1203 @@
+.box1{
+ @include center;
+.container1{
+  width: 90%;
+  padding: 20px;
+margin-top: 30px;
+.head1{
+  text-align: center;
+  width: 100%;
+ margin-bottom: 24px;
+  h1{
+      @include mobile-head;
+     color: #222B45; 
+     margin-bottom: 32px;
+  }
+  span{
+      color: $acsent;
+  }
+}
+  p{
+      @include font1420400;
+      text-align: center;
+      color:  #8F9BB3;
+      margin-bottom: 24px;
+          }
+          .btns1{
+              display: none;
+          }
+          .btns{
+            @include center;
+             flex-wrap: wrap;
+                       }
+         .btn2-watch-video{
+          margin-top: 24px;
+          border: 1px solid $blue;
+          color: $blue;
+          background-color: $secondary;
+          }
+          button{
+              width: 248px;
+              height: 48px;
+              border-radius: 8px;
+              padding: 12px;
+              margin-bottom: 24px;
+          }
+          .btn2-try-now{
+              border: 1px solid $blue;
+              color: $secondary;
+              background-color: $blue;  
+    }
+    
+}      
+}
+
+.bg-pink{
+  background: url('../../images/Rectangle 8.png') ;
+  p{
+font-family: Euclid Circular A;
+font-size: 24px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+color: $primary;
+position: relative;
+bottom: 35px;
+  }
+  .drop{
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+       bottom: 40px;
+  }
+ 
+}
+.benefits{
+  margin-top: 56px;
+  margin-bottom: 80px;
+  @include center;
+   flex-direction: column;
+.left{
+  width: 90%;
+  a{
+    @include center;
+    @include font2028400;
+    color: $blue;
+        }
+  h4{
+    text-align: center;
+    @include mobile-head;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+  p{
+    text-align: center;
+    @include paragraph-font;
+    color: $grey;
+  } 
+}
+.right{
+    margin-top: 40px;
+}
+} 
+
+.benefit-cards{
+  @include center;
+   flex-direction: column;
+   margin-top: 80px;
+.benefit-card{
+  width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 80px;
+h5{
+@include font2028400;
+text-align: center;
+color: $primary;
+margin-top: 20px;
+width: 232px;
+}
+p{
+font-family: Euclid Circular A;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color: $primary;
+}
+}
+}
+ .social-networks{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #ffd6d9;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+    .part1{
+        width: 90%;
+        margin-bottom: 48px;
+        padding-bottom: 0px;
+      h2{
+       margin-bottom: 20px;
+        font-family: Euclid Circular A;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+          color: $primary;       
+       }
+       p{
+        font-family: Euclid Circular A;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $primary;
+                }
+        .btn-lg{
+            display: none;
+        }
+    }
+    .part2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        gap: 8px;
+        .social-network-card{
+            height: 96px ;
+            width: 328px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 15px;
+                padding-left: 15px;
+            border: 1px solid $secondary;
+            border-radius: 16px;
+            background-color: $secondary;
+            h1{
+font-family: Euclid Circular A;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: $primary;
+
+            }
+            p{
+font-family: Euclid Circular A;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+            }
+        }
+        .btn-mobile{
+            display: flex;
+            @include center;
+            width: 328px; 
+            height: 48px;
+            padding: 12px;
+            border-radius: 8px;
+            background-color: $blue;
+            border: 1px solid $blue;
+            color: $secondary;
+            margin-top: 56px;
+            margin-bottom: 24px;
+        }
+    }
+}
+.features-box{
+    @include center;
+     flex-wrap: wrap; 
+       .features-container{
+       padding-bottom: 80px;
+       padding-top: 80px;
+           .head{
+               margin-bottom: 64px;
+               @include center;
+               flex-direction: column;
+               gap: 24px;
+               h1{
+   font-family: Euclid Circular A;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 32px;
+   letter-spacing: 0em;
+   text-align: center;
+   height: 32px;
+   width: 328px;
+   color: $primary;
+               }
+               p{
+   font-family: Euclid Circular A;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: center;
+   height: 48px;
+   width: 328px;
+   color: $grey;
+   
+               }
+           }
+           .row{
+               img{
+                   height: 224px;
+                   width: 270px; 
+               }
+           }
+           .info {
+               height: 224px;
+               width: 328px;
+           }
+           
+           h1{
+   font-family: Euclid Circular A;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 28px;
+   letter-spacing: 0em;
+   text-align: left;
+   height: 56px;
+   width: 296px;
+   color: $primary;
+           }
+           p{
+   font-family: Euclid Circular A;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: $primary;
+   height: 168px;
+   width: 328px;
+   
+           }
+          .btn-features{
+           @include center;
+           button{
+   font-family: Euclid Circular A;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: 0px;
+   text-align: center;
+   height: 48px;
+   width: 213px;
+   background-color: $blue;
+   color: $secondary;
+   border-radius: 8px;
+   border: $blue;
+   padding: 12px;
+           }
+       }
+       }
+       
+   }
+   .rating{
+    @include center;
+    flex-direction: column;
+    background-color: $pink400;
+    height: 706px;
+   
+    h1{
+        height: 64px;
+width: 61px;
+font-family: Euclid Circular A;
+font-size: 48px;
+font-weight: 600;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: center;
+color: $secondary;
+    }
+    p{
+        height: 28px;
+width: 166px;
+font-family: Euclid Circular A;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: $secondary;
+    }
+    .rate-boxes{
+        display: flex;
+         @include center;
+    flex-direction: column;
+    }
+    .rate-box{
+        margin-top: 52px;
+        height: 100px;
+        width: 166px;
+        @include center;
+        flex-direction: column;
+      
+    }
+    .transparent-img{
+        .img1{
+            position: relative;
+            top: 65px;
+        }
+        .img2 {
+            display: none;
+        }
+        .img3 {
+            display: none;
+        }
+    }
+}
+.map-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    h1{
+        height: 64px;
+        width: 328px;
+@include mobile-head;
+    }
+    p{
+        margin-bottom: 44px;
+        height: 48px;
+        width: 328px;
+        color: $grey;
+font-family: Euclid Circular A;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+
+           
+    }
+    img{
+        height: 175px;
+    }
+}
+.comments-box{
+    background-color: #F7F9FC;
+    padding-top: 56px;
+    padding-bottom: 96px;
+    
+    .info{
+        @include center;
+        flex-direction: column;
+        gap: 56px;
+        h1{
+            height: 64px;
+            width: 327px;
+@include mobile-head;
+        }
+        p{
+            height: 168px;
+            width: 328px;
+font-family: Euclid Circular A;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+        color: $primary;
+        }
+    }
+    .profile{
+        margin-top: 56px;
+        margin-left: 36px;  
+        height: 56px;
+          gap: 16px;
+        display: flex;
+      h1{
+        height: 28px;
+width: 129px;
+font-family: Euclid Circular A;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: $primary;
+
+      } 
+      p{
+        height: 24px;
+width: 160px;
+font-family: Euclid Circular A;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: $grey;
+      } 
+    }
+    .scroll{
+      @include center;
+      margin-top: 48px;
+    }
+    .previous{
+      display: none;
+    }
+    .next{
+      display: none;
+    }
+    
+}
+.creative-box{
+    @include center;
+    flex-direction: column;
+     gap: 32px;
+     padding-top: 64px;
+     padding-bottom: 120px;
+     .creative-head{
+       h1{
+         height: 64px;
+   width: 328px;
+   @include mobile-head;
+   
+       }
+       a{
+         display: none;
+       }
+       img{
+         display: none;
+       }
+     }
+     .creative-cards{
+     .creative-card{
+      @include center;
+      flex-direction: column;
+      gap: 24px;
+      box-shadow: 0px 16px 32px 0px #767F9A14;
+      width: 328px;
+      height: 379px;
+      filter: drop-shadow(0px 16px 32px rgba(118, 127, 154, 0.08));
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+       h1{
+         height: 56px;
+         width: 296px;
+   font-family: Euclid Circular A;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 28px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: $primary; 
+       }
+       .btn-box{
+         display: flex;
+         gap: 16px;
+   padding: 0px 0px 0px 16px;
+   
+       button{
+        @include center;
+         height: 32px;
+   background-color: white;
+   padding: 6px 16px 6px 16px;
+         border: 1px solid #C5CEE0;
+   font-family: Euclid Circular A;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: $primary;
+       }
+     }
+     }
+   }
+     .creative-link{
+       @include center;
+       margin-top: 33px;
+       gap: 8px;
+       a{
+         color: $blue;
+       }
+      
+     }
+   .subscribe{
+   @include center;
+   gap: 24px;
+   flex-direction: column;
+   padding-top: 40px;
+     h1{
+       @include mobile-head;
+       height: 64px;
+   width: 198px;
+   
+     }
+     input{
+       height: 48px;
+   width: 308px;
+   border: 1px solid #E4E9F2;
+   border-radius: 8px;
+   margin-top: 6px;
+   font-family: Euclid Circular A;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #8F9BB3;
+   padding-left: 20px;
+     }
+     .input-btn{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 24px;
+     button{
+       height: 48px;
+   width: 326px;
+   border-radius: 8px;
+   padding: 12px;
+   border: 1px solid $blue500;
+   background-color: $blue500;
+   color: $secondary;
+   font-family: Euclid Circular A;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: 0px;
+   text-align: center;
+     }
+   }
+   }
+   }
+   .accordion-box{
+    .accordion{
+      @include center;
+      flex-direction: column;
+      gap: 48px;
+      margin-bottom: 96px;
+      h1{
+        height: 32px;
+    width: 322px;
+    @include mobile-head;
+      }
+      .accordion-section{
+        img{
+          display: none;
+        }
+      a{
+        height: 76px;
+    width: 280px;
+    @include paragraph-font;
+      }
+      p{
+        height: 264px;
+    width: 280px;
+    @include paragraph-font;
+    background-color: $secondary;
+      }
+      }
+    .accordion-section {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    
+    .accordion-section a {
+      display: block;
+      padding: 10px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+    .accordion-section a:hover {
+      background-color: #eee;
+    }
+    
+    .accordion-content {
+      display: none;
+      padding: 10px;
+    }
+    
+    .accordion-content:target {
+      display: block;
+    }
+    }
+  }
+  .finally-end-box{
+    @include center;
+    .finally-end-container{
+      height: 509px;
+      width: 90%;
+      border-radius: 16px;
+      background-color: $pink400;
+      padding-top: 68px;
+      @include center;
+      .finally-end{
+    .info{
+      @include center;
+      flex-direction: column;
+      gap: 32px;
+    }
+    img{
+      position: relative;
+      top: 10px;
+    }
+      h1{
+        height: 80px;
+    width: 280px;
+    font-family: Euclid Circular A;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $secondary;
+    
+      }
+      p{
+        height: 96px;
+    width: 280px;
+    @include paragraph-font;
+    color: $secondary;
+      }
+      .btns{
+        @include center; 
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 24px;
+        position: relative;
+        top: 30px;
+        button{
+          height: 48px;
+    width: 280px;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    
+        }
+        .light{
+          border: 1px solid $secondary;
+          background-color: $secondary;
+          color: $primary;
+    
+        }
+        .dark{
+          border: 1px solid $primary;
+          background-color: $primary;
+          color: $secondary;
+        }
+      }
+    }
+    }
+    } 
+@media (min-width: $desktop){
+  .box1{
+  .container1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .head1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h1{ 
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+        }
+        p{
+          width: 800px;
+          margin-left: 60px;
+    
+        }
+    }
+    .schedule-img{
+        display: flex;
+        justify-content: center;
+        
+        img{
+        height: 577px;
+        width: 768px;
+        border-radius: 16px;
+        position: relative;
+        top: 110px;
+        } 
+ }
+    .btns{
+        display: none;
+    }
+    .btns1{
+       display: flex;
+       flex-direction: row-reverse;
+       gap: 50px;
+       align-items: center;
+       justify-content: center;
+    }
+   .btn-watch-video{
+    border: 1px solid $blue;
+    color: $blue;
+    background-color: $secondary;
+    }
+    button{
+        width: 248px;
+        height: 48px;
+        border-radius: 8px;
+        padding: 12px;
+        margin-top: 70px;
+    }
+    .btn-try-now{
+        border: 1px solid $blue;
+        color: $secondary;
+        background-color: $blue;  
+}
+    p{
+font-size: 16px;
+line-height: 24px;
+    }
+  }
+}   
+.bg-pink{ 
+    height: 496px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+.semi-oval{
+    display: none;
+}  
+p{
+  width: 800px;
+text-align: center;
+position: static;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 80px;
+
+}
+.drop{
+    top: 100px;
+   
+}
+}
+  .benefits{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   .left{
+    width: 384px;
+    h4{
+      text-align: left;
+      @include desktop-head;
+margin-bottom: 24px;
+margin-top: 25px;
+    }
+   a{
+    justify-content: flex-start;
+   }
+    p{
+      text-align: left;
+
+    }
+   } 
+  
+}
+.benefit-cards{
+ @include center;
+flex-direction: row;
+flex-wrap: wrap;
+ margin-top: 82px;
+.benefit-card{
+width:  calc((100% - 160px)/ 3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 32px;
+  p{
+    height: 100px;
+max-width: 370px;
+
+padding: 0px 8px 0px 8px;
+
+  }
+}
+}
+    .social-networks{
+       padding-top: 123px;
+       padding-bottom: 101px;
+        .part1{
+            display: flex;
+            justify-content: space-between;
+           width: 78%;
+           padding-bottom: 64px;
+           .btn-lg{
+           @include center;
+               width: 199px; 
+               height: 48px;
+               padding: 12px;
+               border-radius: 8px;
+               background-color: $blue;
+               border: 1px solid $blue;
+               color: $secondary;
+            }
+        }
+        .part2{
+            width: 80%;
+            gap: 32px;
+            justify-content: flex-start;
+            .social-network-card{
+            height: 112px;
+            width: 260px;
+            }
+            .btn-mobile{
+                display: none;
+            }
+        }
+    }
+   .features-box{
+       
+          .features-container{
+            padding-bottom: 107px;
+            padding-top: 144px;
+              .head{
+                  margin-bottom: 96px;
+                  @include center;
+                  flex-direction: column;
+                  gap: 24px;
+                  h1{
+      font-size: 34px;
+      line-height: 40px;
+      height: 40px;
+      width: 328px;
+                  }
+                  p{
+                  width: 384px;
+                  }
+              }
+        .row2{
+            flex-direction: row-reverse;
+        }
+          .row{
+              display: flex;
+              gap: 153px;
+              .info {
+                  height: 144px;
+                  width: 384px;
+            margin-top: 55px;
+              }
+              .info1{
+                position: relative;
+                left: 80px;
+              }
+              .info2{
+                  position: relative;
+                  left: 100px;
+                  margin-right: 100px;
+                }
+                .info3{
+                    position: relative;
+                    left: 110px; 
+                }
+              img{
+                  margin-bottom: 152px;
+              }
+              img:hover{
+                  transform: scale(1.5); 
+              }
+              h1{
+      font-size: 24px;
+      line-height: 32px;
+              }
+              }
+          } 
+      }
+    .rating{
+        flex-direction: column; 
+        height: 340px;
+       
+        h1{
+            height: 120px;
+            width: 122px;
+            font-size: 96px;
+            line-height: 120px;
+        }
+        .rate-boxes{
+            display: flex;
+            flex-direction: row;
+            gap: 240px;
+        }
+        .rate-box{
+            height: 148px;
+            position: relative;
+            top: 30px;
+        }
+        .transparent-img{
+            display: flex;
+            gap: 75px;
+            .img1 {
+                top: 15px;
+            }
+            .img2 {
+                display: flex;
+                position: relative;
+                top: 15px;
+            }
+            .img3 {
+                display: flex;
+                position: relative;
+                top: 15px;
+            }
+        }
+    }
+    .map-container{
+        @include center;
+    .map-box{
+        padding-top: 96px;
+        padding-bottom: 69px;
+        width: 800px;
+        height: 596px;
+        img{
+            height: 428px;
+            width: 800px;
+        }
+        h1{
+            height: 40px;
+            width: 591px;  
+        }
+        p{
+            height: 48px;
+            width: 384px;
+             
+        }
+    }
+}  
+.comments-box{
+    padding-top: 64px;
+    padding-bottom: 188px;
+    position: relative;
+    .info{
+      gap: 72px;
+      h1{
+        height: 80px;
+        width: 591px;
+        font-size: 34px;
+        line-height: 40px;
+      }
+      p{
+        text-align: center;
+        height: 96px;
+        width: 592px;
+      }
+    }
+    .profile{
+      height: 56px;
+width: 232px;
+display: flex;
+position: absolute;
+left: 570px;
+margin-top: 58px;
+    }
+    .previous{
+      display: flex;
+      position: absolute;
+      bottom: 47%;
+      left: 16%;
+    }
+    .next{
+      display: flex;
+      position: absolute;
+    left: 80%;
+    bottom: 47%;
+    }
+    .scroll{
+      display: none;
+    }
+}
+.creative-box{
+    .creative-head{
+      display: flex;
+     gap: 545px;
+     .right-side{
+      display: flex;
+     
+      a{
+        width: 127px;
+        height: 24px;
+        color: $blue;
+      }
+      img{
+        position: relative;
+        bottom: 10px;
+        right: 14px;
+      }
+     }
+      h1{
+        height: 40px;
+  width: 544px;
+  @include desktop-head;
+  
+      }
+      a{
+        display: flex;
+      }
+      img{
+        display: flex;
+      }
+    }
+    .creative-cards{
+      @include center;
+      gap: 32px;
+     .creative-card{
+      width: 384px;
+      height: 416px;
+      padding-bottom: 22px;
+      img{
+        height: 248px;
+  width: 384px;
+  border-radius: 0px;
+  padding: 8px 8px 0px 8px;
+  
+      }
+      h1{
+        width: 352px;
+      }
+      .btn-box{
+  position: relative;
+  right: 60px;
+      button{
+        width: 116px;
+        border-radius: 4px;
+      }
+    }
+     }
+    }
+    .creative-link{
+      display: none;
+    }
+    .subscribe{
+      @include center;
+      gap: 40px;
+      flex-direction: column;
+      padding-top: 80px;
+      padding-bottom: 96px;
+        h1{
+          height: 32px;
+      width: 322px;
+        }
+        .input-btn{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+        input{
+      width: 388px;
+     padding-left: 20px;
+        }
+        button{
+      width: 176px;
+      
+        }
+      }
+    }
+      }
+      .accordion-box{
+        @include center;
+        .accordion{
+          height: 844px;
+          width: 800px;
+          h1{
+            height: 40px;
+      width: 591px;
+      font-size: 34px;
+      line-height: 40px;
+          }
+          .accordion-section{
+            height: 93px;
+      width: 800px;
+      img{
+        display: flex;
+        position: relative;
+        left: 95%;
+        bottom: 50%;
+      }
+      a{
+        height: 28px;
+      width: 614px;
+      font-size: 20px;
+      line-height:28px;
+      
+      }
+      p{
+        height: 144px;
+width: 648px;
+
+      }
+          }
+      
+      
+        }
+       }
+       .finally-end-box{
+        margin-bottom: 112px;
+        .finally-end-container{
+          height: 240px;
+          padding-top: 0px;
+          .finally-end{
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            .info{
+              gap: 16px;
+            }
+          h1{
+            height: 64px;
+        width: 494px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-right: 30px;
+          }
+          p{
+            height: 48px;
+        width: 528px;
+      
+          }
+          img{
+            display: none;
+          }
+          .btns{
+            flex-direction: row;
+            margin-top: 0px;
+            position: relative;
+            top: 0px;
+          button{
+            height: 48px;
+      width: 174px;
+          }
+          }
+       }
+      
+        }
+      }
+}
+
+
+
