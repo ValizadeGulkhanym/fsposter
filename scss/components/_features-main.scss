@@ -30,10 +30,11 @@
     grid-template-columns: 1fr;
     gap: 32px;
     margin-top: 40px;
-    opacity: 0.5;
+    opacity: 0.7;
     .grid-col {
-     height: 244px;
-     width: 358px;
+     min-height: 244px;
+    max-width: 358px;
+    padding-inline: 20px;
       background-color: $secondary;
       border-radius: 16px;
       box-shadow: 0px 8px 32px 0px #767f9a14;
@@ -43,13 +44,12 @@
       align-content: center;
       gap: 16px;
       h1 {
-        height: 28px;
         width: 320px;
+        min-height: 45px;
         @include font2028400;
         color: $primary;
       }
       p {
-        height: 60px;
         width: 320px;
         @include font1420400;
         color: $primary;
@@ -156,8 +156,9 @@
       opacity: 1;
       .grid-col {
         box-shadow: 0px 8px 32px 0px #767f9a14;
-        width: 390px;
-        height: 244px;
+        max-width: 390px;
+        min-height: 244px;
+    
         h1 {
           height: 28px;
           width: 320px;
