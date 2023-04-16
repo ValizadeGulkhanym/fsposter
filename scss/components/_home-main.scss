@@ -1002,90 +1002,96 @@
       display: none;
     }
   }
-  .creative-box {
-    .creative-head {
+  .creative-box{
+    .creative-head{
+      width: 79%;
       display: flex;
-      gap: 545px;
-      .right-side {
-        display: flex;
-
-        a {
-          width: 127px;
-          height: 24px;
-          color: $blue;
-        }
-        img {
-          position: relative;
-          bottom: 10px;
-          right: 14px;
-        }
+      align-items: center;
+    justify-content: space-between;
+     .right-side{
+      display: flex;
+     justify-content: space-between;
+     align-items: center;
+      a{
+        width: 127px;
+        height: 24px;
+        color: $blue;
       }
-      h1 {
+      
+     }
+      h1{
         height: 40px;
-        width: 544px;
-        @include desktop-head;
+  width: 544px;
+  @include desktop-head;
+  
       }
-      a {
-        display: flex;
+      a{
+        display: block;
       }
-      img {
-        display: flex;
+      img{
+        display: block;
       }
     }
-    .creative-cards {
+    .creative-cards{
+    
       @include center;
       gap: 32px;
-      .creative-card {
-        width: 384px;
-        height: 416px;
-        padding-bottom: 22px;
-        img {
-          height: 248px;
-          width: 384px;
-          border-radius: 0px;
-          padding: 8px 8px 0px 8px;
-        }
-        h1 {
-          width: 352px;
-        }
-        .btn-box {
-          position: relative;
-          right: 60px;
-          button {
-            width: 116px;
-            border-radius: 4px;
-          }
-        }
+     .creative-card{
+      width: 384px;
+      height: 416px;
+      align-items: flex-start;
+
+      padding-bottom: 22px;
+      img{
+       width: 368px; 
+  border-radius: 0px;
+  padding: 8px 8px 0px 8px;
+  
+      }
+      h1{
+        width: 352px;
+        padding-left: 20px;
+      }
+      .btn-box{
+       
+      button{
+        height: 32px;
+        width: 130px;
+        border-radius: 4px;
       }
     }
-    .creative-link {
+     }
+    }
+    .creative-link{
       display: none;
     }
-    .subscribe {
+    .subscribe{
       @include center;
       gap: 40px;
       flex-direction: column;
       padding-top: 80px;
       padding-bottom: 96px;
-      h1 {
-        height: 32px;
-        width: 322px;
-      }
-      .input-btn {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-        input {
-          width: 388px;
-          padding-left: 20px;
+        h1{
+          height: 32px;
+      width: 322px;
         }
-        button {
-          width: 176px;
+        .input-btn{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+        input{
+      width: 388px;
+     padding-left: 20px;
+        }
+        button{
+      width: 176px;
+      
         }
       }
     }
-  }
+      }
+ 
   .accordion-box {
     @include center;
     .accordion {
@@ -1119,43 +1125,46 @@
       }
     }
   }
-  .finally-end-box {
+  .finally-end-box{
     margin-bottom: 112px;
-    .finally-end-container {
+    .finally-end-container{
       height: 240px;
       padding-top: 0px;
-      .finally-end {
+      .finally-end{
         display: flex;
-        width: 80%;
+        width: 90%;
         justify-content: space-between;
-        .info {
+        .info{
           gap: 16px;
         }
-        h1 {
-          height: 64px;
-          width: 494px;
-          font-size: 48px;
-          line-height: 48px;
-          margin-right: 30px;
-        }
-        p {
-          height: 48px;
-          width: 528px;
-        }
-        img {
-          display: none;
-        }
-        .btns {
-          flex-direction: row;
-          margin-top: 0px;
-          position: relative;
-          top: 0px;
-          button {
-            height: 48px;
-            width: 174px;
-          }
-        }
+      h1{
+        height: 64px;
+    width: 494px;
+    font-size: 48px;
+    line-height: 48px;
+    margin-right: 30px;
       }
+      p{
+        height: 48px;
+    width: 528px;
+  
+      }
+      img{
+        display: none;
+      }
+      .btns{
+        flex-direction: row;
+        margin-top: 0px;
+        position: relative;
+        top: 0px;
+      button{
+        height: 48px;
+  width: 174px;
+      }
+      }
+   }
+  
     }
   }
+ 
 }

@@ -28,20 +28,22 @@
       @include center;
       .finally-end {
         display: flex;
-        width: 80%;
-        gap: 188px;
-        justify-content: space-around;
+        width: 90%;
+        justify-content: space-between;
         .info {
-          @include center;
-          flex-direction: column;
+         display: flex;
+         align-items: flex-start;
           gap: 16px;
+          flex-direction: column;
         }
         h1 {
           height: 64px;
           width: 494px;
-          font-size: 48px;
-          line-height: 48px;
-          @include desktop-head;
+font-family: Euclid Circular A;
+font-size: 48px;
+font-weight: 600;
+line-height: 64px;
+letter-spacing: 0em;
           text-align: left;
           color: $secondary;
         }
@@ -87,17 +89,13 @@
       }
     }
   }
-
-  .footer-box {
-    .row2 {
-      height: 120px;
-      .copyright {
-        margin-top: 70px;
-        img {
-          margin-bottom: 55px;
-        }
-      }
+  .footer-box{
+    .copyright{
+      padding-top: 20px;
+      img{
+      padding-bottom: 20px; }
     }
+    
   }
 }
 

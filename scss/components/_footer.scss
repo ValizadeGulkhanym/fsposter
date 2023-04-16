@@ -1,131 +1,129 @@
 
-  .footer-box {
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 24px;
+  background-color: #f7f9fc;
+  .row1 {
+   display: grid;
+   grid-template-columns: 1fr;
+   padding-bottom: 24px;
+   .footer-col1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 56px;
-    padding-bottom: 24px;
-    background-color: #f7f9fc;
-    .row1 {
-     display: grid;
-     grid-template-columns: 1fr;
-     padding-bottom: 24px;
-     .footer-col1{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 32px;
-      p {
-        width: 328px;
-        height: 48px;
-       padding-left: 37px;
-      }
+    gap: 32px;
+    p {
+      width: 85%;
+      height: 48px;
+font-family: Euclid Circular A;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+color: $primary;
+    }
+   }
+    .footer-col {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  
+    .foothead {
+      margin-top: 40px;
+      @include font2028400;
+      font-weight: 600;
+      text-align: center;
+      color: $primary;
+    }
+     .mail{
+      padding-left: 60px;
+      padding-bottom: 38px;
+      @include  paragraph-font;
+text-align: left;
      }
-      .footer-col {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
-    
-      .foothead {
-        margin-top: 40px;
-        @include font2028400;
-        font-weight: 600;
+      .logo {
+        margin-right: 16px;
+      }
+      h6 {
+        height: 24px;
+        width: 134px;
         text-align: center;
-        color: $primary;
+      @include  paragraph-font;
       }
-       .mail{
-        padding-left: 60px;
-        padding-bottom: 38px;
-       }
-        .logo {
-          margin-right: 16px;
-        }
-        h6 {
-          height: 24px;
-          width: 134px;
-          text-align: center;
-        @include  paragraph-font;
-        }
-      }   
-    }
-    .row2 {
-      display: grid;
-      grid-template-columns: 1fr;
-      border-top: 1px solid #EDF1F7;
-      .copyright {
-        @include center;
-      margin-top: 24px;
-      gap: 8px;
-      img{
-        position: relative;
-        right: 33px;
-        top: 22px;
-
-      }
-    }
-    .privacy{
-      display: none;
-    } 
-    }
+    }   
   }
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top: 1px solid #EDF1F7;
+    .copyright {
+     @include center;
+     margin-top: 24px;
+     gap: 8px;
+   @include paragraph-font;
+text-align: left;
+  }
+  .privacy{
+    display: none;
+  } 
+  }
+}
 
 @media (min-width: $desktop) {
-  .footer-box {
-    padding-top: 9px;
-    .row1{
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      .footer-col1{
-        margin-top: 38px;
-        p{
-          width: 208px;
-          margin-right: 105px;
+.footer-box {
+  padding-top: 9px;
+  .row1{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    .footer-col1{
+      margin-top: 38px;
+     p{
+      text-align: left;
+     }
+      .logo-box{
+        margin-right: 130px;
+        .logo{
+          padding-right: 10px;
         }
-        .logo-box{
-          margin-right: 120px;
-          .logo{
-            padding-right: 10px;
-          }
-         
-        }
-       
       }
-      .footer-col{
-        .foothead {
-          text-align: left;
-        }
-        h6{
-          text-align: left;
-        }
-        .mail{
-          padding-left: 0px;
-        padding-bottom: 100px;
-         }
-         .social-media{
-       position: relative;
-       bottom: 70px;
-       right: 5px;
-         }
+    }
+    .footer-col{
+      .foothead {
+        text-align: left;
       }
-      
+      h6{
+        text-align: left;
+      }
+      .mail{
+        padding-left: 0px;
+      padding-bottom: 100px;
+       }
+       .social-media{
+     position: relative;
+     bottom: 70px;
+     right: 5px;
+       }
     }
-    .row2{
-      display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-   
-    border-top: none;
-    .copyright{
-      margin-bottom: 30px;
-    }
-      .privacy{
-        @include center;
-        gap: 32px;
-        margin-top: 24px;
-      } 
-    }
+    
   }
-   
-
+  .row2{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  border-top: none;
+    .privacy{
+      @include center;
+      gap: 32px;
+      margin-top: 24px;
+      @include  paragraph-font;
+text-align: right;
+    } 
   }
+}
+}
